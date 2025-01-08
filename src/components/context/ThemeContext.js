@@ -20,18 +20,18 @@ export const ThemeContextProvider = ({ children }) => {
     // Update theme based on mode
     const theme = createTheme({
         palette: {
-            mode: mode,
-            ...(mode === 'light'
-                ? {
-                      primary: { main: '#000000' },
-                      background: { default: 'white' },
-                  }
-                : {
-                      primary: { main: '#90caf9' },
-                      background: { default: '#121212' },
-                  }),
+          mode: mode,
+          ...(mode === 'light'
+            ? {
+                primary: { main: '#000000' },
+                background: { default: '#FFFFFF' },
+              }
+            : {
+                primary: { main: '#90caf9' },
+                background: { default: '#121212' },
+              }),
         },
-    });
+      });
 
     useEffect(() => {
         // Ensure theme is applied from localStorage on load
