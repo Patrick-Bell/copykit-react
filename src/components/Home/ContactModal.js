@@ -64,6 +64,7 @@ const ContactModal = ({ open, handleClose }) => {
             </Box>
           </Box>
         </DialogContent>
+
   
         <Divider />
   
